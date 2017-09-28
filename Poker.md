@@ -105,8 +105,7 @@ plot1 <- qplot(poker$Net.Winnings...USD, data = poker, geom = "histogram",
     guides(colour = FALSE)
 plot1
 ```
-
-![](Poker_files/figure-html/Plotting-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Plotting-1.png"> 
 
 ```r
 # Subsequently, let's get the RoI while we're at it
