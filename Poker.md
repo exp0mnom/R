@@ -127,7 +127,7 @@ plot2 <- qplot(poker$Tourney.Time.Played, data = poker, geom = "histogram",
 plot2
 ```
 
-![](Poker_files/figure-html/Plotting-2.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Plotting-2.png"> 
 
 ```r
 # Additional calculations
@@ -145,7 +145,7 @@ plot3 <- boxplot(poker$Net.Winnings...USD ~ poker$Start.Time,
     cex.axis = 0.875, cex.lab = 1.25)
 ```
 
-![](Poker_files/figure-html/Plotting-3.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Plotting-3.png">
 
 ```r
 # Plot4: We created a density plot in which kernel density
@@ -157,7 +157,7 @@ plot(plot4, main = "Kernel density of EV vs Net Winnings", ylab = "Density",
 polygon(plot4, col = "lightseagreen", border = "white")
 ```
 
-![](Poker_files/figure-html/Plotting-4.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Plotting-4.png">
 
 The model clearly shows that EquityDiff has a higher density for negative values, which translates into a higher expected value than our actual Net Winnings. 
 
@@ -172,7 +172,7 @@ plot(plot5, main = "Kernel density of Finishing Spots", ylab = "Density",
 polygon(plot5, col = "tomato1", border = "white")
 ```
 
-![](Poker_files/figure-html/More plotting-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/More%20plotting-1.png">
 
 Our finishing spot is also good, but our tag indicates we're mostly playing 6-max games, and therefor this is to be expected.
 
@@ -185,7 +185,7 @@ plot6 <- plot(poker$Rake, poker$Total.Buy.In, main = "Rake vs Total Buyin",
     col = "lightseagreen")
 ```
 
-![](Poker_files/figure-html/Still more!-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Still%20more!-1.png">
 
 ```r
 # Additional calculations
@@ -205,7 +205,7 @@ plot7 <- plot(poker$Merged, poker$ProfitPerHour, main = "Hourly profit per hand"
 abline(h = -50, col = "red")
 ```
 
-![](Poker_files/figure-html/True problem hands-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/True%20problem%20hands-1.png">
 
 ```r
 plot8 <- plot(pokerClubs$Merged, pokerClubs$ProfitPerHour, main = "Hourly profit per hand: Clubs", 
@@ -213,7 +213,7 @@ plot8 <- plot(pokerClubs$Merged, pokerClubs$ProfitPerHour, main = "Hourly profit
     cex.axis = 0.6, cex.lab = 1.25, outline = FALSE)
 ```
 
-![](Poker_files/figure-html/True problem hands-2.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/True%20problem%20hands-2.png">
 
 ```r
 # For some reason, the subplot on Suits doesn't work. The
@@ -319,7 +319,7 @@ Corrplot1 <- corrplot(cor(PokerNumerics), method = "circle",
     order = "hclust", addrect = 3)
 ```
 
-![](Poker_files/figure-html/Correlation plot-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Correlation%20plot-1.png">
 
 ```r
 # This one is prettier!
@@ -328,7 +328,7 @@ Corrplot1 <- corrplot(cor(PokerNumerics), order = "hclust", addrect = 3,
     col = Col1(100))
 ```
 
-![](Poker_files/figure-html/Correlation plot-2.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Correlation%20plot-2.png">
 
 #Now that we have a better idea of the strongly correlated variables, we can 'select' more valuable scatterplots to visualize in a matrix. We can use pairs() for this.
 
@@ -340,7 +340,7 @@ Scatterplot1 <- pairs(~poker$Winnings + poker$Net.Winnings...USD +
     col.axis = "tomato1", cex.axis = 1.75)
 ```
 
-![](Poker_files/figure-html/Correlation matrix-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Correlation%20matrix-1.png">
 
 The scatterplots aren't as straightforward as we might have imagined: they're more confusing than the plots before, and cluttering our thoughts. They do support the correlations, just shown in a different way. But do they provide actionable insights? No, unfortunately just statistical insights.
 
@@ -380,7 +380,7 @@ plot8 <- plot(perform$Position, perform$bb.100, xlab = "Position",
     ylab = "BB/100", main = "Position vs BB/100")
 ```
 
-![](Poker_files/figure-html/Stub-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Stub-1.png">
 
 From a first basic plot, we can see that we're only making losses on the BB (=Big Blind). For further analysis, we could look at our problem hands on the big blind, but we'd have to bind the two data frames together and dig deeper. This is probably the most valuable result we've come across though.
 
@@ -397,7 +397,7 @@ plot9 <- ggplot(perform, aes(perform$Total.Hands, perform$bb.100,
 plot9
 ```
 
-![](Poker_files/figure-html/Revisiting plot3-1.png)<!-- -->
+<img src="https://github.com/exp0mnom/R/blob/master/images/Revisiting%20plot3-1.png">
 
 We can conclude this gives us a much better result. There is a clear downfall in BB/100 in the end. It's time to make a summary of our results.
 
