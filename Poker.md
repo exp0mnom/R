@@ -181,7 +181,7 @@ Our finishing spot is also good, but our tag indicates we're mostly playing 6-ma
 # Plotting rake against total buyin
 
 plot6 <- plot(poker$Rake, poker$Total.Buy.In, main = "Rake vs Total Buyin", 
-    xlab = "Rake", ylab = "Total Buyin", cex.lab = 1.2, pch = 19, 
+    xlab = "Rake", ylab = "Total Buyin", cex.lab = 1.2, pch = 99, 
     col = "lightseagreen")
 ```
 
